@@ -9,3 +9,12 @@
 body {
   min-height: 100vh;
 }
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/PretendardVariable.ttf');
+}
+
+body * {
+  font-family: 'Pretendard';
+}
