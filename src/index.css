@@ -14,4 +14,18 @@
   --color-gray-300: #79747e;
   --color-gray-200: #a4a1aa;
   --color-gray-100: #fafafb;
+
+  /* Font Sizes (pt = px 가정) */
+  --font-size-20: 20px;
+  --font-size-18: 18px;
+  --font-size-17: 17px;
+  --font-size-16: 16px;
+  --font-size-15: 15px;
+  --font-size-14: 14px;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }

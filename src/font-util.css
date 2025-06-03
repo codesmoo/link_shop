@@ -1,0 +1,70 @@
+/* === 20px === */
+.font-bold-20 {
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-bold);
+}
+
+/* === 18px === */
+.font-medium-18 {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-medium);
+}
+
+.font-regular-18 {
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-regular);
+}
+
+/* === 17px === */
+.font-semibold-17 {
+  font-size: var(--font-size-17);
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-medium-17 {
+  font-size: var(--font-size-17);
+  font-weight: var(--font-weight-medium);
+}
+
+.font-regular-17 {
+  font-size: var(--font-size-17);
+  font-weight: var(--font-weight-regular);
+}
+
+/* === 16px === */
+.font-bold-16 {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-bold);
+}
+
+.font-semibold-16 {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-medium-16 {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-medium);
+}
+
+.font-regular-16 {
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-regular);
+}
+
+/* === 15px === */
+.font-semibold-15 {
+  font-size: var(--font-size-15);
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-medium-15 {
+  font-size: var(--font-size-15);
+  font-weight: var(--font-weight-medium);
+}
+
+/* === 14px === */
+.font-semibold-14 {
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-semibold);
+}
