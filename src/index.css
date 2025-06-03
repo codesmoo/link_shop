@@ -1,0 +1,17 @@
+:root {
+  /* Colors */
+  --color-black: #14151a;
+  --color-white: #fff;
+
+  /* Brand Color */
+  --color-brand-red: #fb545b;
+  --color-brand-blue: #3e45ec;
+
+  /* Gray Scale */
+  --color-gray-900: #888790;
+  --color-gray-700: #a2a2ac;
+  --color-gray-500: #dddcdf;
+  --color-gray-300: #79747e;
+  --color-gray-200: #a4a1aa;
+  --color-gray-100: #fafafb;
+}
