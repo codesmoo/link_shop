@@ -1,12 +1,18 @@
 import './App.css';
-import Header from './components/Header';
-import ShopList from './components/ShopList';
+import { Route, Routes } from 'react-router-dom';
+
+import List from './pages/List';
+import Linkpost from './pages/Linkpost';
+import NotFound from './pages/NotFound';
 function App() {
   return (
-    <div>
-      <Header />
-      <ShopList />
-    </div>
+    <>
+      <Routes>
+        <Route path='/list' element={<List />} />
+        <Route path='/linkpost' element={<Linkpost />} />
+        <Route path='*' element={<NotFound />} />
+      </Routes>
+    </>
   );
 }
 
