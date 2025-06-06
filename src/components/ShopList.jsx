@@ -1,7 +1,44 @@
 import './ShopList.css';
 import search_icon from './../assets/search.svg';
 import ShopItem from './ShopItem';
+import { getShopList } from '../api';
+import { useEffect, useState } from 'react';
+
 const ShopList = () => {
+  const [items, setItems] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadingError, setLoadingError] = useState(null);
+
+  const handleLoad = async () => {
+    let response;
+    try {
+      setIsLoading(true);
+      setLoadingError(null);
+      response = await getShopList();
+    } catch (error) {
+      setLoadingError(error);
+      return;
+    } finally {
+      setIsLoading(false);
+    }
+
+    const { list } = response;
+    console.log(list);
+
+    if (list) {
+      setItems(list);
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    handleLoad();
+  }, []);
+
+  if (isLoading) {
+    return <div>로딩중입니다..</div>;
+  }
+
   return (
     <div className='ShopList'>
       <div className='search_section'>
@@ -14,12 +51,9 @@ const ShopList = () => {
         />
       </div>
       <div className='shop_item_section'>
-        <ShopItem />
-        <ShopItem />
-        <ShopItem />
-        <ShopItem />
-        <ShopItem />
-        <ShopItem />
+        {items.map((item) => (
+          <ShopItem key={item.id} {...item} />
+        ))}
       </div>
     </div>
   );
