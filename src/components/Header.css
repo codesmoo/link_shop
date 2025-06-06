@@ -4,3 +4,7 @@
   justify-content: space-between;
   padding: 20px 0;
 }
+
+.Header .header_logo {
+  cursor: pointer;
+}

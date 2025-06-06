@@ -1,15 +1,15 @@
 import './Header.css';
 import logo from './../assets/logo.svg';
-import Button from './Button';
-const Header = () => {
+import { useNavigate } from 'react-router-dom';
+
+const Header = ({ rightChild }) => {
+  const nav = useNavigate();
   return (
     <header className='Header'>
       <div className='header_logo'>
-        <img src={logo} />
+        <img src={logo} onClick={() => nav('/list')} />
       </div>
-      <div className='header_right'>
-        <Button text='생성하기' />
-      </div>
+      <div className='header_right'>{rightChild}</div>
     </header>
   );
 };
