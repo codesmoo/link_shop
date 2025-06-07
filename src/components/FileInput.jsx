@@ -1,4 +1,4 @@
-import './InputProduct.css';
+import './FileInput.css';
 const FileInput = () => {
   return (
     <div className='FileInput'>
