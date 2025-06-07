@@ -8,7 +8,13 @@ const List = () => {
   return (
     <>
       <Header
-        rightChild={<Button text='생성하기' onClick={() => nav('/linkpost')} />}
+        rightChild={
+          <Button
+            text='생성하기'
+            type='blue'
+            onClick={() => nav('/linkpost')}
+          />
+        }
       />
       <ShopList />
     </>

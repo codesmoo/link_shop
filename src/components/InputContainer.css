@@ -1,0 +1,16 @@
+.InputContainer {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.InputContainer .title_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.InputContainer .title_wrapper > button {
+  border: none;
+  background-color: var(--color-white);
+  color: var(--color-brand-blue);
+  cursor: pointer;
+}
