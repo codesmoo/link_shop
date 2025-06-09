@@ -3,6 +3,7 @@ import InputContainer from './InputContainer';
 import Button from './Button';
 import InputProduct from './InputProduct';
 import InputShop from './InputShop';
+
 const Editor = () => {
   return (
     <div className='Editor'>
