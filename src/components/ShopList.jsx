@@ -51,9 +51,11 @@ const ShopList = () => {
         />
       </div>
       <div className='shop_item_section'>
-        {items.map((item) => (
-          <ShopItem key={item.id} {...item} />
-        ))}
+        {items
+          .filter((item) => item.id !== 606)
+          .map((item) => (
+            <ShopItem key={item.id} {...item} />
+          ))}
       </div>
     </div>
   );
