@@ -1,16 +1,13 @@
 import { useState } from 'react';
 import './InputContainer.css';
+import InputProduct from './InputProduct';
+import InputShop from './InputShop';
 
-const initialInputList = {
-  imageUrl: '',
-  name: '',
-  price: '',
-};
-const InputContainer = ({ text, hasButton, child }) => {
-  const [inputList, setInputList] = useState([initialInputList]);
+const InputContainer = ({ text, hasButton, type }) => {
+  const [inputProductList, setInputList] = useState([{}]);
   const handleAddInput = () => {
     setInputList(() => {
-      return [...inputList, initialInputList];
+      return [...inputProductList, {}];
     });
   };
   return (
@@ -23,7 +20,9 @@ const InputContainer = ({ text, hasButton, child }) => {
           </button>
         )}
       </div>
-      {inputList.map(() => child)}
+      {type === 'product' &&
+        inputProductList.map((v, i) => <InputProduct key={i} index={i} />)}
+      {type === 'shop' && <InputShop />}
     </div>
   );
 };
